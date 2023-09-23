@@ -1,0 +1,335 @@
+<html>
+
+<head>
+    <title>hello</title>
+    <link rel="stylesheet" href="Home.css">
+    </link>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <section>
+        <div class="parent" style="margin: 10px;">
+            <div class="first">
+                <img height="50px"
+                    src="data:image/png;base64,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" />
+            </div>
+            <div class="middle">
+                <ul>
+                    <li>HOMES</li>
+                    <li>PAGES</li>
+                    <li>EVENTS</li>
+                    <li>PORTFOLID</li>
+                    <li>BLOG</li>
+                    <li>SHOP</li>
+                    <li>ELEMENTS</li>
+                </ul>
+            </div>
+            <div class="last">
+                <ul>
+                    <li><i class="fa-solid fa-magnifying-glass"></i></li>
+                    <li><i class="fa-solid fa-bars"></i>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+
+        <section class="hello">
+            <div style="position: relative;">
+
+                <img src="E:\Saikrish priject\images\banner3.jpg" width="100%" height="550px" />
+                <div style="position: absolute;top:20%;left: 25%;">
+                    <div >
+                       
+                            <h1 style="color:white;font-family: bold;font-size: 50px;">JOIN OUR DANCE CREW</h1>
+                            
+                      
+                                <h3 style="color:white;font-family: bold;top:0%">Dancing is more than anything else.
+                                    <br>
+                                    We express our love through dancing.</h3>
+                                   </h3>
+                     
+
+
+                    </div>
+                    
+                 
+                            <button style="background-color: green;color: white;padding: 8px;">SIGN UP</button>
+                            <button style="color: white;padding: 8px">PURCHASE</button>
+                        
+                    </div>
+                </div>
+               
+
+
+            </div>
+        </section>
+
+
+
+        <section>
+            <div class="top">
+                <div class="imagess">
+                    <ul>
+                        <li>HOMES</li>
+                        <li>PAGES</li>
+                        <li>EVENTS</li>
+                        <li>PORTFOLID</li>
+                        <li>BLOG</li>
+                        <li>SHOP</li>
+                        <li>ELEMENTS</li>
+                    </ul>
+                </div>
+                <div style="text-align: center;">
+                    <input style="height: 40px;width:400px" placeholder="e-mail" />
+                    <button
+                        style="height: 40px;background-color: green;border:1px solid green;color: white;">participate</button>
+                </div>
+                <div style="display: flex;padding-top: 200px;text-align: center;">
+                    <div class="vamshi " style="text-align: center;padding-left: 25%;">
+                        <h1 style="font-size: 35px;">MEETING OUR AMAZING DANCE TEACHERS</h1>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+        </section>
+
+        <section style="margin: 10px;">
+            <div class="grided" style="padding-left: 10px;">
+
+
+                <div>
+                    <img height="200px" width="425px" src="E:\Saikrish priject\images\dsc1.jpg" />
+                    </div>
+                <div>
+                    <img height="200px" width="425px" src="E:\Saikrish priject\images\dsc2.jpg" />
+
+
+                </div>
+                <div>
+                    <img height="200px" width="425px" src="E:\Saikrish priject\images\dsc3.jpg" />   
+                </div>
+
+                <div>
+                    <img height="200px" width="425px" src="E:\Saikrish priject\images\dsc4.jpg" />
+                </div>
+                <div>
+                    <img height="200px" width="425px" src="E:\Saikrish priject\images\dsc5.jpg" />
+
+
+                </div>
+                <div>
+                    <img height="200px" width="425px" src="E:\Saikrish priject\images\dsc6.jpg" />
+                </div>
+
+            </div>
+        </section>
+
+        <section style="margin: 10px;">
+            <div class="content">
+                <div class="menu">
+                    <h3 style="text-align: right;" ;>Lorem Ipsum is simply dummy text of as
+                        been the <br>
+                        industry's standard dummy text ever since the 1500s, when an unknown printer
+                        took a galley of type and scrambled it t</h3>
+                    <h2 style="text-align: center">KEEP TRACK OF YOUR AMAZING<br>
+                        UPCOMING EVENTS </h2>
+
+                </div>
+                <div>
+                    <img height="200px" src="E:\Saikrish priject\images\image1.jpg" />
+
+                    <p>july 9pm @hyderabad</p>
+                    <p>location 233, india</p>
+                    <h1>Swan lake bullet</h1>
+                    <h4>It is a long established fact that a reader will be distracted by
+                        the readable content of a page when looking at its layout.
+                    </h4>
+                </div>
+                <div>
+                    <img height="200px" src="E:\Saikrish priject\images\images2.jpg" />
+
+                    <p>july 9pm @hyderabad</p>
+                    <p>location 233, india</p>
+                    <h1>Swan lake bullet</h1>
+                    <h4>It is a long established fact that a reader will be distracted by
+                        the readable content of a page when looking at its layout.
+                    </h4>
+                </div>
+              
+                <div>
+                    <img height="200px" src="E:\Saikrish priject\images\pic3.jpg" />
+
+                    <p>july 9pm @hyderabad</p>
+                    <p>location 233, india</p>
+                    <h1>Swan lake bullet</h1>
+                    <h4>It is a long established fact that a reader will be distracted by
+                        the readable content of a page when looking at its layout.
+                    </h4>
+                </div>
+            </div>
+        </section>
+
+<section>
+    <iframe src="https://www.youtube.com/embed/xTpv9lc_qMw" width="100%" height="500px" frameborder="0"></iframe>
+
+
+</section>
+
+
+
+        <section style="margin: 10px;">
+            <div>
+
+                <div class="menu1">
+                    <h3 style="text-align: right;width:50%" ;>Lorem Ipsum is simply dummy text of as
+                        been the <br>
+                        industry's standard dummy text ever since the 1500s, when an unknown printer
+                        took a galley of type and scrambled it t</h3>
+                    <h2 style="text-align: center;width:50%">KEEP TRACK OF YOUR AMAZING<br>
+                        UPCOMING EVENTS </h2>
+
+                </div>
+                <div style="display: flex;">
+
+
+                    <div>
+                        <img height="200px" width="425px" src="E:\Saikrish priject\images\image1.jpg" />
+                        <p>july 9pm @hyderabad</p>
+                        <p>location 233, india</p>
+                        <h1>Swan lake bullet</h1>
+                        <h4>It is a long established fact that a reader will be distracted by
+                            the readable content of a page when looking at its layout.
+                        </h4>
+                    </div>
+                    <div>
+                        <img height="200px" width="425px" src="E:\Saikrish priject\images\images3.jpg" />
+                         <p>july 9pm @hyderabad</p>
+                        <p>location 233, india</p>
+                        <h1>Swan lake bullet</h1>
+                        <h4>It is a long established fact that a reader will be distracted by
+                            the readable content of a page when looking at its layout.
+                        </h4>
+                    </div>
+                    <div>
+                      
+                        <img height="200px" width="425px" src="E:\Saikrish priject\images\images2.jpg" />
+                          <p>july 9pm @hyderabad</p>
+                        <p>location 233, india</p>
+                        <h1>Swan lake bullet</h1>
+                        <h4>It is a long established fact that a reader will be distracted by
+                            the readable content of a page when looking at its layout.
+                        </h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section style="margin: 10px;">
+            <div>
+
+                <div class="menu1">
+                    <h3 style="text-align: right;width:50%" ;>Lorem Ipsum is simply dummy text of as
+                        been the <br>
+                        industry's standard dummy text ever since the 1500s, when an unknown printer
+                        took a galley of type and scrambled it t</h3>
+                    <h2 style="text-align: center;width:50%">KEEP TRACK OF YOUR AMAZING<br>
+                        UPCOMING EVENTS </h2>
+
+                </div>
+                <div class="grided23">
+
+
+                    <div>
+                        <img height="200px" width="425px" src="E:\Saikrish priject\images\dance1.jpg" />
+                    </div>
+                    <div>
+                        <img height="200px" width="425px" src="E:\Saikrish priject\images\dance2.jpg" />
+
+
+                    </div>
+                    <div>
+                        <img height="200px" width="425px" src="E:\Saikrish priject\images\dance3.jpg" />
+                    </div>
+                    <div>
+                        <img height="200px" width="425px" src="E:\Saikrish priject\images\dance4.jpg" />
+                    </div>
+                    <div>
+                        <img height="200px" width="425px" src="E:\Saikrish priject\images\dance5.jpg" />
+
+
+                    </div>
+                    <div>
+                        <img height="200px" width="425px" src="E:\Saikrish priject\images\dance6.jpg" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+           <!-- <section style="margin: 10px;">
+            <div class="grided" style="padding-left: 10px;">
+
+
+                <div>
+                    <img height="200px" width="425px" src="E:\Saikrish priject\images\dance1.jpg" />
+
+
+                </div>
+                <div>
+                    <img height="200px" width="425px" src="E:\Saikrish priject\images\dance2.jpg" />
+
+
+                </div>
+                <div>
+                    <img height="200px" width="425px" src="E:\Saikrish priject\images\pic1.jpg" />
+
+
+                </div>
+                
+
+               
+            </div>
+        </section> -->
+
+
+        <!-- ///footer section here -->
+        <section>
+            <div class="footer" style="background-color: gray;">
+                <div class="footer1" style="padding-left: 50px;">
+                    <h4 style="color: white;">ABOUT US</h4>
+                    <p>orem Ipsum is simply dummy text of the
+                        printing and
+                        hen an unknown printer took a gall</p>
+                    <p>saikrishna@gmail.com</p>
+                    <p>+912367846789</p>
+                    <P>America,184 main colony</P>
+                </div>
+                <div class="footer2">
+                    <h4 style="color: white;"> LATEST TWIEETS</h4>
+                    <p>orem Ipsum is simply dummy </p>
+                </div>
+                <div class="footer3">
+                    <h4 style="color: white;">LATEST POSTS</h4>
+                    <p style="color: green;">May 2021 </p>
+                    <h5>King of dancers</h5>
+                    <p style="color: green;">May 2021 </p>
+                    <h5>King of dancers</h5>
+                </div>
+                <div class="footer4">
+                    <h4 style="color: white;">INSTAGRAM</h4>
+                    <p>orem Ipsum is simply dummy text of the t</p>
+                </div>
+            </div>
+        </section>
+</body>
+
+</html>
